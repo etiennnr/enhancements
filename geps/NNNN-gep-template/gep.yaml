@@ -1,0 +1,15 @@
+title: GEP Title
+gep-number: NNNN
+authors:
+- "@you"
+- "@maybe-another-author"
+steering: product|technical
+steering-link: https://gardener.cloud/community/steering/technical|product/your-topic
+status: provisional|implementable|implemented|deferred|rejected|withdrawn|replaced
+creation-date: 20XX-XX-XX
+reviewers:
+- "@main-reviewer-1"
+- "@main-reviewer-2"
+approvers:
+- "@main-approver-1"
+- "@main-approver-2"
