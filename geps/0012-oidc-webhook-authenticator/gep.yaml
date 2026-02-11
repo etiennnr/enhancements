@@ -1,0 +1,12 @@
+title: OIDC Webhook Authenticator
+gep-number: 0012
+authors:
+- "@mvladev"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2020-06-19
+reviewers:
+- "@danielfoehrKn"
+approvers:
+- "@danielfoehrKn"
