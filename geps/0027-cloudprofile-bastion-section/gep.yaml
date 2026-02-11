@@ -1,0 +1,16 @@
+title: Add Optional Bastion Section to CloudProfile
+gep-number: 0027
+authors:
+- "@hebelsan"
+- "@kon-angelo"
+- "@AndreasBurger"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2024-06-24
+reviewers:
+- "@rfranzke"
+- "@timuthy"
+approvers:
+- "@rfranzke"
+- "@timuthy"
