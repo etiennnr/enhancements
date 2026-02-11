@@ -1,0 +1,17 @@
+title: Workload Identity - Trust Based Authentication
+gep-number: 0026
+authors:
+- "@vpnachev"
+- "@dimityrmirchev"
+steering: none
+steering-link: none
+status: implementable
+creation-date: 2024-04-04
+reviewers:
+- "@rfranzke"
+- "@ScheererJ"
+- "@timuthy"
+approvers:
+- "@rfranzke"
+- "@ScheererJ"
+- "@timuthy"
