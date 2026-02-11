@@ -1,0 +1,12 @@
+title: New `core.gardener.cloud/v1beta1` APIs Required to Extract Cloud-Specific/OS-Specific Knowledge Out of Gardener Core
+gep-number: 0004
+authors:
+- "@rfranzke"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2019-08-04
+reviewers:
+- "@mvladev"
+approvers:
+- "@mvladev"
