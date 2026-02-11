@@ -1,0 +1,12 @@
+title: Integrating etcd-druid with Gardener
+gep-number: 0006
+authors:
+- "@georgekuruvillak"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2019-10-09
+reviewers:
+- "@rfranzke"
+approvers:
+- "@rfranzke"
