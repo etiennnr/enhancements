@@ -1,0 +1,15 @@
+title: SNI Passthrough Proxy for kube-apiservers
+gep-number: 0008
+authors:
+- "@mvladev"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2019-12-06
+reviewers:
+- "@vpnachev"
+- "@rfranzke"
+- "@zanetworker"
+approvers:
+- "@rfranzke"
+- "@zanetworker"
