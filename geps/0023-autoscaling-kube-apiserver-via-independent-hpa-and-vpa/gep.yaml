@@ -1,0 +1,18 @@
+title: Autoscaling Shoot kube-apiserver via Independently Driven HPA and VPA
+gep-number: 0023
+authors:
+- "@anderun"
+- "@voelzmo"
+steering: none
+steering-link: none
+status: withdrawn
+creation-date: 2023-01-31
+reviewers:
+- "@istvanballok"
+- "@timebertt"
+- "@oliver-goetz"
+- "@rfranzke"
+approvers:
+- "@timebertt"
+- "@oliver-goetz"
+- "@rfranzke"
