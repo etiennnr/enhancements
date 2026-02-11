@@ -64,6 +64,9 @@ If unsure, reach out to a steering committee member for guidance.
 
 ## 📝 How to Propose a Gardener Enhancement
 
+> [!IMPORTANT]
+> Please read through https://gardener.cloud/community/steering first.
+
 1. **Determine the target committee**
    - Product Steering (PSC) or Technical Steering (TSC)
 
@@ -80,4 +83,4 @@ If unsure, reach out to a steering committee member for guidance.
    - Diagrams, slides, etc. in a matching subfolder
 
 5. **Open a Pull Request**
-   - A steering committee member will coordinate scheduling and next steps
+   - Read https://gardener.cloud/community/steering/#%F0%9F%93%86-what-happens-after-opening-a-pr to learn what happens after opening the PR.
