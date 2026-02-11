@@ -1,0 +1,18 @@
+title: Cloud Profile Version Classification Lifecycles
+gep-number: 0032
+authors:
+- "@crigertg"
+- "@Gerrit91"
+- "@LucaBernstein"
+- "@vknabel"
+steering: none
+steering-link: none
+status: implementable
+creation-date: 2024-12-03
+reviewers:
+- "@maboehm"
+- "@rfranzke"
+- "@timebertt"
+approvers:
+- "@rfranzke"
+- "@timebertt"
