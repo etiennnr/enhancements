@@ -1,0 +1,17 @@
+title: Automated Shoot CA Rotation
+gep-number: 0018
+authors:
+- "@BeckerMax"
+- "@rfranzke"
+- "@timebertt"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2022-02-03
+reviewers:
+- "@vlerenc"
+- "@rfranzke"
+- "@timebertt"
+approvers:
+- "@rfranzke"
+- "@timebertt"
