@@ -1,0 +1,16 @@
+title: IPv6 Single-Stack Support in Local Gardener
+gep-number: 0021
+authors:
+- "@timebertt"
+- "@einfachnuralex"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2022-11-21
+reviewers:
+- "@majst01"
+- "@ScheererJ"
+- "@rfranzke"
+approvers:
+- "@ScheererJ"
+- "@rfranzke"
