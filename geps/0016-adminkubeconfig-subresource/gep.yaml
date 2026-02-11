@@ -1,0 +1,15 @@
+title: Dynamic kubeconfig generation for Shoot clusters
+gep-number: 0016
+authors:
+- "@mvladev"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2021-05-04
+reviewers:
+- "@rfranzke"
+- "@vpnachev"
+- "@vlerenc"
+- "@timebertt"
+approvers:
+- "@rfranzke"
