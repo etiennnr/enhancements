@@ -1,0 +1,19 @@
+title: Live Control Plane Migration
+gep-number: 0039
+authors:
+- "@acumino"
+- "@ary1992"
+- "@seshachalam-yv"
+- "@shafeeqes"
+steering: technical
+steering-link: https://gardener.cloud/community/steering/technical/2026-02-live-control-plane-migration/
+status: implementable
+creation-date: 2026-01-12
+reviewers:
+- "@timebertt"
+- "@ScheererJ"
+- "@rfranzke"
+approvers:
+- "@timebertt"
+- "@ScheererJ"
+- "@rfranzke"
