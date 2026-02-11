@@ -1,0 +1,21 @@
+title: Highly Available Shoot Control Planes
+gep-number: 0020
+authors:
+- "@unmarshall"
+- "@timuthy"
+- "@shreyas-s-rao"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2022-07-07
+reviewers:
+- "@rfranzke"
+- "@vlerenc"
+- "@timebertt"
+- "@ialidzhikov"
+- "@ScheererJ"
+approvers:
+- "@rfranzke"
+- "@timebertt"
+- "@ialidzhikov"
+- "@ScheererJ"
