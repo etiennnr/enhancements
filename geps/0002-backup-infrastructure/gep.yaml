@@ -1,0 +1,12 @@
+title: Backup Infrastructure CRD and Controller Redesign
+gep-number: 0002
+authors:
+- "@swapnilgm"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2019-04-16
+reviewers:
+- "@rfranzke"
+approvers:
+- "@rfranzke"
