@@ -1,0 +1,15 @@
+title: Shoot OIDC Issuer
+gep-number: 0024
+authors:
+- "@dimityrmirchev"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2024-01-10
+reviewers:
+- "@vpnachev"
+- "@timuthy"
+- "@rfranzke"
+approvers:
+- "@timuthy"
+- "@rfranzke"
