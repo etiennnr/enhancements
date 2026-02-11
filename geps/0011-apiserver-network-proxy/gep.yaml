@@ -1,0 +1,15 @@
+title: Utilize API Server Network Proxy to Invert Seed-to-Shoot Connectivity
+gep-number: 0011
+authors:
+- "@zanetworker"
+steering: none
+steering-link: none
+status: withdrawn
+creation-date: 2020-04-09
+reviewers:
+- "@vlerenc"
+- "@mvladev"
+- "@rfranzke"
+approvers:
+- "@mvladev"
+- "@rfranzke"
