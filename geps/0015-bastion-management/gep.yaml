@@ -1,0 +1,15 @@
+title: Bastion Management and SSH Key Pair Rotation
+gep-number: 0015
+authors:
+- "@petersutter"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2021-03-31
+reviewers:
+- "@rfranzke"
+- "@vlerenc"
+- "@mvladev"
+approvers:
+- "@rfranzke"
+- "@mvladev"
