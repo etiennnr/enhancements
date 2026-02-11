@@ -1,0 +1,14 @@
+title: Gardener Versioning Policy
+gep-number: 0005
+authors:
+- "@RaphaelVogel"
+steering: none
+steering-link: none
+status: implemented
+creation-date: 2019-10-10
+reviewers:
+- "@vlerenc"
+- "@rfranzke"
+approvers:
+- "@vlerenc"
+- "@rfranzke"
