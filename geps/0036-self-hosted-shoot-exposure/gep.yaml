@@ -3,7 +3,7 @@ gep-number: 0036
 authors:
 - "@timebertt"
 steering: technical
-steering-link: https://gardener.cloud/community/steering/technical/2026-01-self-hosted-shoot-exposure/
+steering-link: https://gardener.cloud/community/steering/technical/0036-self-hosted-shoot-exposure/
 status: implementable
 creation-date: 2025-12-05
 reviewers:

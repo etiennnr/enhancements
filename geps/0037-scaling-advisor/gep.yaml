@@ -1,9 +1,9 @@
-title: Scaling Recommender
+title: Scaling Advisor
 gep-number: 0037
 authors:
 - "@unmarshall"
 steering: product
-steering-link: https://gardener.cloud/community/steering/product/2025-03-scaling-recommender/
+steering-link: https://gardener.cloud/community/steering/product/0037-scaling-advisor/
 status: implementable
 creation-date: 2025-03-07
 reviewers:

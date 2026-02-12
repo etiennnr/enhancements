@@ -6,7 +6,7 @@ authors:
 - "@seshachalam-yv"
 - "@shafeeqes"
 steering: technical
-steering-link: https://gardener.cloud/community/steering/technical/2026-02-live-control-plane-migration/
+steering-link: https://gardener.cloud/community/steering/technical/0039-live-control-plane-migration/
 status: implementable
 creation-date: 2026-01-12
 reviewers:

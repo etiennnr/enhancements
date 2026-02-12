@@ -1,8 +1,8 @@
-# GEP-0037: Scaling Recommender
+# GEP-0037: Scaling Advisor
 
 ## Table of Contents
 
-- [GEP-0037: Scaling Recommender](#gep-0037-scaling-recommender)
+- [GEP-0037: Scaling Advisor](#gep-0037-scaling-advisor)
   - [Table of Contents](#table-of-contents)
   - [Summary](#summary)
   - [Motivation](#motivation)
@@ -120,7 +120,7 @@ Currently there are only [two cluster autoscaling implementations](https://kuber
 
 A proof-of-concept [Scaling Advisor](https://github.tools.sap/kubernetes/gardener-scaling-recommender) was envisaged which has single responsibility to provide scaling advice by leveraging the kubernetes kube-scheduler on the current cluster state.
 
-![Scaling Recommender POC Flow](./poc-flow.png)
+![Scaling Advisor POC Flow](./poc-flow.png)
 
 
 #### Single actor responsibility
