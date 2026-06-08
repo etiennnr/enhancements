@@ -3,7 +3,6 @@ gep-number: 0033
 authors:
 - "@MrBatschner"
 - "@Roncossek"
-steering: none
 steering-link: none
 status: implementable
 creation-date: 2024-12-16

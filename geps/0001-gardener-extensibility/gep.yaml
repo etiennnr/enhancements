@@ -2,7 +2,6 @@ title: Gardener Extensibility and Extraction of Cloud-Specific/OS-Specific Knowl
 gep-number: 0001
 authors:
 - "@rfranzke"
-steering: none
 steering-link: none
 status: implemented
 creation-date: 2018-09-18

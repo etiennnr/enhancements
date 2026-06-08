@@ -2,7 +2,7 @@
 
 A **Gardener Enhancement Proposal (GEP)** is the primary mechanism to propose, communicate, and coordinate **project-wide changes** for the Gardener project.
 
-GEPs are used for topics that require discussion and decision-making in Gardener's **Product Steering Committee (PSC)** and/or **Technical Steering Committee (TSC)**.
+GEPs are used for topics that require discussion and decision-making in Gardener's **Technical Steering Committee (TSC)**.
 
 ---
 
@@ -13,13 +13,14 @@ GEPs are used for topics that require discussion and decision-making in Gardener
    - Suitable forums include:
      - Gardener Slack channels
      - Direct discussions with community members
-     - Direct discussions with PSC/TSC members
+     - Direct discussions with TSC members
    - The goal is to validate that the topic is worth pursuing and that there is sufficient interest to move forward.
 
 2. **Create a GEP**
    - Follow the [process](../README.md#-how-to-propose-a-gardener-enhancement) and structure outlined in the [**GEP template**](./NNNN-gep-template/README.md).
    - Submit the proposal as a Pull Request to this repository.
-   - A PSC or TSC member will coordinate review and scheduling for the relevant steering meeting.
+   - The steering committee will start reviewing your PR - please react on their feedback!
+   - Once the initial PR reviews have been completed, a member of the steering committee will coordinate scheduling a meeting to discuss the GEP.
 
 ---
 
@@ -35,8 +36,8 @@ GEPs are required for **non-trivial, project-wide changes**, in particular for:
 - **New features** beyond very small, incremental additions
 - **Major changes** to existing functionality
 - Topics with **cross-team or ecosystem-wide impact**
-- **New extensions** in the Gardener organizatino
-- Changes requiring **PSC or TSC discussion**
+- **New extensions** in the Gardener organization
+- Changes requiring **TSC discussion**
 
 The goal is to keep the process lightweight enough that using a GEP is the **default** for significant changes.
 
@@ -54,31 +55,22 @@ Benefits include:
 - A durable, searchable **record of decisions and rationale**
 - Early feedback that often prevents costly redesigns later
 
-The process is inspired by established proposal systems such as IETF RFCs, Python PEPs, Rust RFCs, and Kubernetes GEPs, but adapted to Gardener's governance model.
+The process is inspired by established proposal systems such as IETF RFCs, Python PEPs, Rust RFCs, and Kubernetes KEPs, but adapted to Gardener's governance model.
 
 ---
 
-### How do PSC and TSC fit into the GEP process?
+### How does the TSC fit into the GEP process?
 
 Gardener has **no SIG-based ownership model**.
 
 Instead:
 
-- **Product Steering Committee (PSC)**
-  Evaluates proposals at an **early stage**, focusing on:
-  - Vision and strategy
-  - Prioritization and roadmap fit
-  - The **"Whether / Why"** question
-
 - **Technical Steering Committee (TSC)**
-  Evaluates proposals at a **later stage**, focusing on:
-  - Architecture and technical direction
+  Evaluates all proposals, covering:
+  - Vision, strategy, prioritization, and roadmap fit
+  - Architecture, technical direction, and design decisions
   - APIs, interfaces, and design choices
-  - The **"How"** question
-
-A topic typically goes to:
-- **PSC first**, and
-- **TSC later**, once a concrete technical design exists.
+  - From the initial **"Whether / Why"** question through to the **"How"**
 
 ---
 
@@ -86,10 +78,9 @@ A topic typically goes to:
 
 All **project-wide GEPs** live in this repository.
 
-There are **no SIG subdirectories**.  
-Instead, GEPs are organized by steering context (e.g., Product vs. Technical).
+There are **no SIG subdirectories**.
 
-Subproject-internal proposals **do not belong here** unless they meet the criteria for PSC or TSC discussion.
+Subproject-internal proposals **do not belong here** unless they meet the criteria for TSC discussion.
 
 ---
 
@@ -101,7 +92,7 @@ You usually **do not** need a GEP for:
 - Minor, non-controversial enhancements
 - Changes scoped strictly to a single subproject that do **not** meet steering criteria
 
-When in doubt, err on the side of creating a GEP or ask a PSC/TSC member for guidance.
+If you are unsure whether your change requires a GEP, it is better to create one rather than skip it. You can also ask a TSC member for guidance.
 
 ---
 

@@ -2,7 +2,6 @@ title: Networking Extensibility
 gep-number: 0003
 authors:
 - "@zanetworker"
-steering: none
 steering-link: none
 status: implemented
 creation-date: 2019-08-28

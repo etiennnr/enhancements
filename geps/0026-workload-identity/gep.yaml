@@ -3,7 +3,6 @@ gep-number: 0026
 authors:
 - "@vpnachev"
 - "@dimityrmirchev"
-steering: none
 steering-link: none
 status: implementable
 creation-date: 2024-04-04

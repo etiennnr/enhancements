@@ -1,6 +1,6 @@
 # Gardener Enhancements
 
-This repository contains **Gardener Enhancement Proposals (GEPs)** - design and proposal documents for changes that are **relevant at the project-wide level** and require discussion and decision-making in Gardener's **Product Steering Committee (PSC)** and/or **Technical Steering Committee (TSC)**.
+This repository contains **Gardener Enhancement Proposals (GEPs)** - design and proposal documents for changes that are **relevant at the project-wide level** and require discussion and decision-making in Gardener's **Technical Steering Committee (TSC)**.
 
 The structure and intent of this repository are inspired by [`kubernetes/enhancements`](https://github.com/kubernetes/enhancements).
 
@@ -17,7 +17,7 @@ Examples include:
 - Initiatives requiring substantial development investment
 - Proposals with elevated technical or operational risk
 
-If a topic qualifies for [**Product Steering**](https://gardener.cloud/community/steering/#%F0%9F%A7%91%E2%80%8D%F0%9F%92%BC-product-steering) or [**Technical Steering**](https://gardener.cloud/community/steering/#%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB-technical-steering), it belongs in this repository and must follow the **GEP process and template**.
+If a topic qualifies for [**Technical Steering**](https://gardener.cloud/community/steering/#%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB-technical-steering), it belongs in this repository and must follow the **GEP process and template**.
 
 ---
 
@@ -27,24 +27,20 @@ This repository **does not** host:
 - Subproject-internal design documents
 - Proposals that only affect a single Gardener subproject (e.g., MCM, etcd-druid) **and do not meet steering criteria**
 
-Subprojects are free to maintain their own project-scoped proposal or design documents as long as the topic does **not** require steering-level discussion.  
+Subprojects are free to maintain their own project-scoped proposal or design documents as long as the topic does **not** require steering-level discussion.
 If it does, it must be submitted here as a GEP and presented in the relevant steering meeting.
 
 ---
 
-## 🧭 Steering Committees
+## 🧭 Steering Committee
 
-Gardener has two steering bodies:
+Gardener has one steering body:
 
-- **Product Steering Committee (PSC)**  
-  Focuses on *strategy, vision, prioritization, and roadmap alignment*.  
-  Discusses topics at an **early stage**, answering the **“Why / Whether”** question.
+- **Technical Steering Committee (TSC)**
+  Focuses on *strategy, vision, prioritization, roadmap alignment, architecture, technical direction, and design decisions*.
+  Discusses topics from the initial **”Why / Whether”** question through to the **”How”**.
 
-- **Technical Steering Committee (TSC)**  
-  Focuses on *architecture, technical direction, and design decisions*.  
-  Discusses topics at a **later stage**, answering the **“How”** question.
-
-Detailed information, criteria, and meeting processes can be found here:  
+Detailed information, criteria, and meeting processes can be found here:
 👉 https://gardener.cloud/community/steering/
 
 ---
@@ -57,6 +53,7 @@ A topic typically requires a GEP if it meets **any** of the following:
 - Has **relevant cross-team impact**
 - **Significantly impacts Gardener users or ecosystem**
 - Introduces **high technical or operational risk**
+- Introduces a **new Gardener extension** in the [Gardener GitHub organization](https://github.com/gardener)
 
 If unsure, reach out to a steering committee member for guidance.
 
@@ -67,15 +64,16 @@ If unsure, reach out to a steering committee member for guidance.
 > [!IMPORTANT]
 > Please read through https://gardener.cloud/community/steering first.
 
-1. **Determine the target committee**
-   - Product Steering (PSC) or Technical Steering (TSC)
+1. **First circulate your idea to gauge community interest**
+  — via Slack or community meetings
+  - This helps ensure the proposal is well-motivated and increases the likelihood of a productive steering discussion.
 
 2. **Create a new issue**
    - https://github.com/gardener/enhancements/issues/new?template=enhancement.md
 
 3. **Create a new proposal file**
    - Copy the template from:
-     https://github.com/gardener/enhancements/tree/master/geps/NNNN-gep-template
+     [/geps/NNNN-gep-template](/geps/NNNN-gep-template/README.md)
    - Name it descriptively, e.g.
      `<issue-number>-node-specific-etcd-certificates.md`
 

@@ -2,7 +2,6 @@ title: Reversed Cluster VPN
 gep-number: 0014
 authors:
 - "@marwinski"
-steering: none
 steering-link: none
 status: implemented
 creation-date: 2021-03-24

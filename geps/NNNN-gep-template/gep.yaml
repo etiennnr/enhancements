@@ -3,8 +3,7 @@ gep-number: NNNN
 authors:
 - "@you"
 - "@maybe-another-author"
-steering: product|technical
-steering-link: https://gardener.cloud/community/steering/technical|product/your-topic
+steering-link: https://gardener.cloud/community/steering/your-topic
 status: provisional|implementable|implemented|deferred|rejected|withdrawn|replaced
 creation-date: 20XX-XX-XX
 reviewers:

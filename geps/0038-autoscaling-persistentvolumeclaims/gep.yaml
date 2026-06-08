@@ -3,7 +3,6 @@ gep-number: 0038
 authors:
 - "@plkokanov"
 - "@Kostov6"
-steering: technical
 steering-link: https://gardener.cloud/community/steering/technical/0038-autoscaling-persistentvolumeclaims/
 status: implementable
 creation-date: 2025-12-16

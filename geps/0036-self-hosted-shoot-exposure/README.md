@@ -20,13 +20,13 @@
 
 ## Summary
 
-This proposal introduces a standardized mechanism for exposing the API server of self-hosted shoot clusters with managed infrastructure (see [GEP-28](28-self-hosted-shoot-clusters.md#managed-infrastructure)), e.g., using a load balancer of the underlying infrastructure provider or other strategies.
+This proposal introduces a standardized mechanism for exposing the API server of self-hosted shoot clusters with managed infrastructure (see [GEP-28](../0028-self-hosted-shoot-clusters/README.md#managed-infrastructure)), e.g., using a load balancer of the underlying infrastructure provider or other strategies.
 It defines a new extension resource, `SelfHostedShootExposure`, and describes how control plane exposure can be configured, managed, and reconciled, enabling external access to shoot clusters in a flexible and provider-agnostic way.
 
 ## Motivation
 
 API servers of hosted shoot clusters can be accessed externally via a DNS name  following the pattern `api.<Shoot.spec.dns.domain>` ("external domain").
-The DNS record points to the load balancer of an istio ingress gateway of the hosting seed cluster (see [GEP-08](08-shoot-apiserver-via-sni.md)).
+The DNS record points to the load balancer of an istio ingress gateway of the hosting seed cluster (see [GEP-08](../0008-shoot-apiserver-via-sni/README.md)).
 For convenience, shoot owners can omit the `Shoot.spec.dns.domain` field when creating the `Shoot` object to use a default domain provided by the operator as the cluster's external domain.
 This mechanism relies on configuration in the garden cluster, which might not be available at the time of bootstrapping the self-hosted shoot cluster.
 However, the external domain is required for bootstrapping the cluster as of now, eliminating the option of using a default domain.
@@ -98,7 +98,7 @@ From this point onward, the control plane exposure is no longer managed by Garde
 
 ### `SelfHostedShootExposure` Extension Resource
 
-If the new `exposure.extension` field is set, `gardenadm init` (for initial bootstrapping) or the `gardenlet` (after [connecting the shoot to a garden](28-self-hosted-shoot-clusters.md#gardenadm-connect)) creates/updates a `SelfHostedShootExposure` object in the `kube-system` namespace (similar to the other self-hosted shoot extension objects).
+If the new `exposure.extension` field is set, `gardenadm init` (for initial bootstrapping) or the `gardenlet` (after [connecting the shoot to a garden](../0028-self-hosted-shoot-clusters/README.md#gardenadm-connect)) creates/updates a `SelfHostedShootExposure` object in the `kube-system` namespace (similar to the other self-hosted shoot extension objects).
 This resource instructs the corresponding extension controller to manage the necessary resources for exposing the control plane of the self-hosted shoot cluster and allows the extension to report the resulting ingress addresses, e.g.:
 
 ```yaml
@@ -112,11 +112,14 @@ spec:
   type: stackit
   providerConfig: {} # *runtime.RawExtension
 
-  secretRef: # corev1.SecretReference
-    name: cloudprovider
+  credentialsRef: # *corev1.ObjectReference
+    apiVersion: v1
+    kind: Secret
     namespace: kube-system
+    name: cloudprovider
 
   # control plane endpoints that should be exposed
+  port: 443
   endpoints:
   - nodeName: example-control-plane
     addresses: # []corev1.NodeAddress
@@ -124,7 +127,6 @@ spec:
       type: InternalIP
     - address: example-control-plane
       type: Hostname
-    port: 443
   # - ... more endpoints for HA control planes
 status:
   # extensionsv1alpha1.DefaultStatus
@@ -139,10 +141,11 @@ status:
   - hostname: external.load-balancer.example.com
 ```
 
-The `spec` includes the default set of fields included in all extension resources like `type` and `providerConfig` (see [GEP-01](01-extensibility.md)).
-For shoots with managed infrastructure, the `secretRef` field references the credentials secret that should be used by the extension controller to manage the necessary infrastructure resources (similar to the `Infrastructure` extension resource).
+The `spec` includes the default set of fields included in all extension resources like `type` and `providerConfig` (see [GEP-01](../0001-gardener-extensibility/README.md)).
+For shoots with managed infrastructure, the `credentialsRef` field references the credentials secret that should be used by the extension controller to manage the necessary infrastructure resources (similar to the `Infrastructure` extension resource).
+The `port` field specifies the port that the API server listens on and that should be exposed via the exposure mechanism.
 Additionally, the `spec.endpoints` list contains all healthy control plane node addresses that should be exposed.
-Each endpoint includes the node name, a list of addresses (based on the `Node.status.addresses` list) and the port of the API server (usually `443`).
+Each endpoint includes the node name and a list of addresses (based on the `Node.status.addresses` list).
 
 Control plane nodes are considered healthy if their `status.conditions` list contains a condition of type `Ready` with status `True` and does not contain any condition of type `{Disk,Memory,PID}Pressure` or `NetworkUnavailable` with a status other than `False` and the node has healthy etcd and kube-apiserver pods.
 Also, control plane nodes that are marked for deletion or maintenance operations (e.g., replacement by machine-controller-manager, cluster-autoscaler scale-down, or in-place update) are excluded from the endpoints list.

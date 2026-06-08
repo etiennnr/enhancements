@@ -2,7 +2,6 @@ title: Namespaced Cloud Profiles
 gep-number: 0025
 authors:
 - "@benedictweis"
-steering: none
 steering-link: none
 status: implemented
 creation-date: 2024-02-08
